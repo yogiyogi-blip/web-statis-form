@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Siswa</title>
+  <style>
+    body { font-family: sans-serif; background: #eef2f5; margin: 20px; }
+    .container { max-width: 800px; margin: auto; }
+    .box { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    .form-row { display: flex; gap: 10px; margin-bottom: 10px; }
+    input, select { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; }
+    .btn-submit { background: #28a745; color: white; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+    th { background: #f4f4f4; }
+  </style>
+</head>
+<body>
+
+
+  <div class="box">
+    <h2>Tambah Data Siswa</h2>
+    <form>
+      <div class="form-row">
+        <input type="text" placeholder="NIS">
+        <input type="text" placeholder="Nama Lengkap">
+      </div>
+      <div class="form-row">
+        <select>
+          <option>Pilih Kelas</option>
+          <option>X RPL 1</option>
+          <option>X RPL 2</option>
+        </select>
+        <select>
+          <option>Jenis Kelamin</option>
+          <option>Laki-laki</option>
+          <option>Perempuan</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <input type="date">
+        <button type="submit" class="btn-submit">Simpan Data</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="box">
+    <h2>Daftar Siswa</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>NIS</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Gender</th>
+          <th>Tgl Lahir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>001</td>
+          <td>Andi Setiawan</td>
+          <td>X RPL 1</td>
+          <td>Laki-laki</td>
+          <td>2008-01-15</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>002</td>
+          <td>Budi Santoso</td>
+          <td>X RPL 1</td>
+          <td>Laki-laki</td>
+          <td>2008-03-22</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>003</td>
+          <td>abuzar</td>
+          <td>x rpl 4</td>
+          <td>laki laki</td>
+          <td>2010-01-11</td>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

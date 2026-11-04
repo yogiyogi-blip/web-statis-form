@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #00c3ff;
+            background-color: #fff8fe;
+        }
+        header {
+            background: #000000;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+      
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        section {
+            padding: 5rem 2rem 3rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: rgb(0, 247, 255);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #00bcd4;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a252f;
+            border-bottom: 3px solid #00bcd4;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        .heading-container {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .portfolio-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .portfolio-item div {
+            padding: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #1a252f;
+            color: white;
+            margin-top: 2rem;
+            flex-direction: 670px;
+        }
+
+        @media (max-width: 600px){
+              nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem 2rem;
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h3>YOGI</h3>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="beranda" class="hero">
+        <h1>YOGI</h1>
+        <p>HALOO SOBATTT JINGGAA KUUU</p>
+    </div>
+
+    <section id="tentang">
+        <div class="heading-container"><h2>Tentang Saya</h2></div>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            PROPLAYER SEPERTI FLADO DAN DI GADANG GADANG AKAN MENGGATIKAN FLADOCUNG ITU
+        </p>
+    </section>
+
+    <section id="pendidikan">
+        <div class="heading-container"><h2>Pendidikan</h2></div>
+        <div class="grid">
+            <div class="card">
+                <h3>RPL</h3>
+                <p><strong>SMKN 1 RONGGA</strong> | 2026 - Sekarang</p>
+                <p>Fokus pada pengembangan perangkat lunak dan struktur data.</p>
+            </div>
+            <div class="card">
+                <h3>SMK</h3>
+                <p><strong>RPL</strong> | 2025 - 2027</p>
+                <p>Rekayasa Perangkat Lunak.</p>
+            </div>
+        </div>
+    </section>
+
+            
+                <div>
+                    <h3>APA YANG ADA BUTUHKAN?</h3>
+                    <p>KILK AJA LINK DI BAWAH KALO BUTUH BANTUAN.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <div class="heading-container"><h2>Kontak Saya</h2></div>
+        <div class="grid">
+            <div class="card" style="text-align: center;">
+                <h3>Email</h3>
+                <p>yogii@example.com</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/YOGIwededet</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3>GitHub</h3>
+                <p>github.com/yogiwededet</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    
+    </footer>
+
+</body>
+</html>

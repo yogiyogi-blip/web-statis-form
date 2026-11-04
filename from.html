@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Registration Form</title>   
+    <style>
+      body {
+        font-family: "Times New Roman", serif;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color:rgb(156, 79, 25);
+        padding: 20px;
+        border: 1px;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align:left;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .row label:first-child {
+        width: 140px;
+      }
+      input,
+      select,
+      textarea {
+        align-items:flex-start ;
+        text-align: left;
+        border: 1px solid #826e7d;
+        border-radius: 2px;
+      }
+      .flex-1 {
+        flex: 1;
+      }
+      .gap {
+        display: flex;
+        gap: 15px;
+      }
+      .btn {
+        display: block;
+        margin: 20px auto;
+        padding: 4px 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <form>
+      <div class="row">
+        <label>Roll no.:</label><input type="text" class="flex-1" />
+    </div>
+      <div class="row">
+        <label>Student name:</label>
+        <input type="text" placeholder="Nama depan" style="width: 40%" />
+        <input type="text" placeholder="Nama belakang" style="width: 40%" />
+      </div>
+      <div class="row">
+        <label>Father's name :</label><input type="text" class="flex-1" />
+      </div>
+      <div class="row">
+        <label>Date of birth :</label>
+        <input
+          type="date"
+          placeholder="hari"
+          style="width: 40px; text-align: center"
+        />
+        <input
+          type="date"
+          placeholder="Bulan"
+          style="width: 50px; text-align: center"
+        />
+        <input
+          type="date"
+          placeholder="Year"
+          style="width: 60px; text-align: center"
+        />
+        <i style="margin-left: 8px">(DD-MM-YYYY)</i>
+      </div>
+      <div class="row">
+        <label>Mobile no. :</label>
+        <input
+          type="date"
+          value="+91"
+          style="width: 40px; text-align: center"
+        />
+        <input type="text" class="flex-1" />
+      </div>
+      <div class="row">
+        <label>Email id :</label><input type="email" class="flex-1" />
+      </div>
+      <div class="row">
+        <label>Password :</label><input type="password" class="flex-1" />
+      </div>
+      <div class="row">
+        <label>Gender :</label>
+        <div class="gap">
+          <label><input type="radio" name="g" /> cowok</label>
+          <label><input type="radio" name="g" /> ceweek</label>
+        </div>
+      </div>
+      <div class="row">
+        <label>Department :</label>
+        <div class="gap">
+          <label><input type="checkbox" /> CSE</label>
+          <label><input type="checkbox" /> IT</label>
+          <label><input type="checkbox" /> ECE</label>
+          <label><input type="checkbox" /> Civil</label>
+          <label><input type="checkbox" /> Mech</label>
+        </div>
+      </div>
+      <div class="row">
+        <label>Course :</label>
+        <select class="flex-1">
+          <option>
+          </option>
+        </select>
+      </div>
+      <div class="row"><label>Student photo :</label><input type="file" /></div>
+      <div class="row">
+        <label>City :</label><input type="text" class="flex-1" />
+      </div>
+      <div class="row">
+        <label>Address :</label><textarea class="flex-1" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </body>
+</html>
